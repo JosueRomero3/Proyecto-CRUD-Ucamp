@@ -98,7 +98,6 @@ function editData(index) {
         listPeople=JSON.parse(localStorage.getItem('listPeople'));
     }
 
- 
     document.getElementById('inputName').value = listPeople[index].name;
     document.getElementById('inputPhone').value = listPeople[index].phone;
 
@@ -111,10 +110,8 @@ function editData(index) {
             localStorage.setItem('listPeople', JSON.stringify(listPeople));
             ReadData();
 
-           
             document.getElementById('inputName').value = "";
             document.getElementById('inputPhone').value = "";
-            
 
             document.getElementById('btnAdd').style.display = 'block';
             document.getElementById('btnUpdate').style.display = 'none';
