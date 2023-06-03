@@ -16,7 +16,6 @@ function validateForm(){
     return true;
 }
 
-
 //Read
 
 function ReadData(){
@@ -41,7 +40,6 @@ function ReadData(){
 
     document.querySelector('#tableData').innerHTML =html;
 }
-
 
 document.onload = ReadData();
 
